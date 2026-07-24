@@ -1,0 +1,21 @@
+print("-----adding two Numbers----")
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+print("Addition:", a + b)
+print("--Area of a Rectangle--")
+length=int(input("Enter length of rectangle: "))
+breadth=int(input("Enter breadth of rectangle: "))  
+print("Area of rectangle:", length * breadth)
+print("--Area of a Circle--")
+radius=int(input("Enter radius of circle: "))
+area=3.14 * radius * radius
+print("Area of circle:", area)
+print("---swaping---")
+c=int(input("Enter first number: "))
+d=int(input("Enter second number: "))
+c, d = d, c
+print("After swapping: c =", c, "d =", d)
+print("---Celsius to Fahrenheit---")
+celsius=int(input("Enter temperature in Celsius: "))
+fahrenheit=(celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
