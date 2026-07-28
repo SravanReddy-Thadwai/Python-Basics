@@ -1,0 +1,10 @@
+s={
+    "r":76,
+    "s":54,
+    "a":87,
+    "e":54,
+    "v":89
+}
+print(max(s.values()))
+print(min(s.values()))
+print(sum(s.values())/len(s))
