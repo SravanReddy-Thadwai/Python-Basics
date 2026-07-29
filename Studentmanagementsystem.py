@@ -20,3 +20,52 @@ elif a>=50:
     print("Pass")
 else:
     print("Fail")
+#for n no.of students
+students = []
+
+n = int(input("Enter number of students: "))
+
+for i in range(n):
+    print(f"\nEnter details for Student {i+1}")
+
+    name = input("Name: ")
+    roll = input("Roll Number: ")
+
+    marks = []
+    for j in range(5):
+        mark = float(input(f"Enter Subject {j+1} marks: "))
+        marks.append(mark)
+
+    total = sum(marks)
+    average = total / 5
+
+    if average >= 90:
+        grade = "A+"
+    elif average >= 80:
+        grade = "A"
+    elif average >= 70:
+        grade = "B"
+    elif average >= 60:
+        grade = "C"
+    elif average >= 50:
+        grade = "D"
+    else:
+        grade = "F"
+
+    student = {
+        "Name": name,
+        "Roll": roll,
+        "Marks": marks,
+        "Total": total,
+        "Average": average,
+        "Grade": grade
+    }
+
+    students.append(student)
+
+print("\n========== STUDENT DETAILS ==========")
+
+for student in students:
+    print("\n-------------------------")
+    for key, value in student.items():
+        print(f"{key}: {value}")
